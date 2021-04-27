@@ -1,18 +1,36 @@
 title: Nick Glazer
+author: Nick Glazer
+avatar_url: https://nickglazer.github.io/nick-glazer-resume/nickg.jpg
 email: nick@glazer.dev
 description: >-
   I am a software developer.
 baseurl: ""
 url: "https://glazer.dev"
 github_username: nickglazer
-linkedin_username: nick.glazer
+linkedin_username: nickglazerdev
 show_excerpts: true
+permalink: pretty
+
+header_pages:
+  - about.md
+  - resume.html
+
+projects:
+  - med-map
+  - car-inventory
+  - povon-test-server
+  - threat-locator
+  - python-state-machine-framework
+  - python-practice
+  - deathly-hallows-portrait-generator
+  - meta-qpcpp
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
   - jekyll-github-metadata
+  - jekyll-octicons
 
 # Exclude from processing.
 # The following items will not be processed, by default.
