@@ -10,19 +10,20 @@ github_username: nickglazer
 linkedin_username: nickglazerdev
 show_excerpts: true
 permalink: pretty
+exclude: ['README.md']
 
 header_pages:
   - about.md
   - resume.html
 
 projects:
+  - deathly-hallows-portrait-generator
+  - threat-locator
   - med-map
   - car-inventory
   - povon-test-server
-  - threat-locator
   - python-state-machine-framework
   - python-practice
-  - deathly-hallows-portrait-generator
   - meta-qpcpp
 
 # Build settings
@@ -31,7 +32,6 @@ plugins:
   - jekyll-feed
   - jekyll-github-metadata
   - jekyll-octicons
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

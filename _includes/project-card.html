@@ -9,7 +9,7 @@
             <use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use>
           </svg>
           {% else %}
-          {% octicon repo height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repo %}
+            {% octicon repo height:20 class:"mr-1 v-align-middle" fill:"#586069" aria-label:repo %}
           {% endif %}
           {{ repository.name }}
         </a>
@@ -18,12 +18,10 @@
     <div class="project-card-description">{{ repository.description }}</div>
   </div>
   <div class="github-info {% if include.goToGithub %}f-col{% else %}f-row{% endif %}">
+    {% if repository.language %}
     <div>
-      {% if repository.language %}
-      {% if site.data.colors[repository.language].color != null %}
       <span class="repo-language-color"
-        style="background-color:{{ site.data.colors[repository.language].color }}"></span>
-      {% endif %}
+        style="background-color:{{ site.data.colors[repository.language].color | default: '#888888' }}"></span>
       <span class="mr-3" itemprop="programmingLanguage">{{ repository.language }}</span>
     </div>
     {% endif %}
