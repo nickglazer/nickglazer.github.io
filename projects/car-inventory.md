@@ -7,6 +7,7 @@ tags: java mysql
 ---
 
 ![Inventory Search](/assets/images/projects/car-inventory/screenshots/InventorySearch.png)
+
 ## Summary
 
 At USF, one of the required courses for Computer Science was `Software Engineering`. This course basically was a crash course in how software development and computer science are not synonomous. As a part of this course, we were required to work in groups to write and present a piece of software that showed we used source control, architectural design patterns, and teamwork. For the semester I took this course, we were asked to write a car inventory management application.
@@ -30,7 +31,7 @@ The tables that were in our database included:
 
 _Note: I use improved entity-relationship names in this diagram, see below._
 
-I'm not sure if we used foreign key constraints in the original, but since nothing is deleted and the benefits of FKC are debated I decided no to use them in the new schema I wrote.
+I'm not sure if we used foreign key constraints in the original, but since nothing is deleted and the benefits of FKC are debated I decided not to use them in the new schema I wrote.
 
 ## Screenshots
 
